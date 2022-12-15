@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import hexy as hx
-from grid import *
+from mirror_array.grid import *
 
 coords = hx.get_spiral(np.array((0, 0, 0)), 1, 3)
 x, y = hx.cube_to_pixel(coords, 1).T

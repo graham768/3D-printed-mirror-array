@@ -1,9 +1,9 @@
 import numpy as np
-from helpers import *
+from mirror_array.helpers import *
 
 
 def get_coords(coords, width_in=None, height_in=None, **kwargs):
-  get_coords_mm(coords, width_mm=to_mm(width_in), height_mm=to_mm(height_in), **kwargs)
+  return get_coords_mm(coords, width_mm=to_mm(width_in), height_mm=to_mm(height_in), **kwargs)
 
 
 def get_coords_mm(coords, width_mm=None, height_mm=None, resize_both=True, mirror_x=True, mirror_y=False, debug=False):

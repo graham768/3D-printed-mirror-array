@@ -1,7 +1,7 @@
 import numpy as np
 import hexy as hx
-from prism import *
-from helpers import *
+from mirror_array.prism import *
+from mirror_array.helpers import *
 
 def get_hex_grid_centers(num_hexes_radius, mini_hex_radius):
     """Creates a large hexagonal grid of mini-hexagons. Returns the 2D xy centerpoint for each hexagon.
