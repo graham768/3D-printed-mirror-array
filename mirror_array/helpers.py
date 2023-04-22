@@ -69,5 +69,7 @@ def plot_colored_grid(points, partition_indices):
     points = np.array(points)
     # Divide into quarters
     plt.scatter(points.T[0], points.T[1], c=partition_indices, s=300.0, cmap="rainbow")
+    for i, p in enumerate(points):
+      plt.text(p[0], p[1], int(partition_indices[i]), ha="center", va="center")
     plt.axis("equal")
     plt.show()
